@@ -4,10 +4,8 @@
 */
 :root {
   --accent-color: #ff0070;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --paragraf-color: #000028;
   --backgound-image: url(/images/cover-image-dark.png);
---title-color: #db00ff;
-
+  --title-color: #db00ff;
 }
-
