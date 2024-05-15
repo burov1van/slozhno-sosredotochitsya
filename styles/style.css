@@ -231,7 +231,6 @@
 
 @media (768px <= width < 1024px) {
   .header {
-    /* min-height: 100vh; */
     min-height: 1024px;
   }
 
@@ -280,11 +279,11 @@
 
   .why-hard-section__title {
     max-width: 90%;
-    grid-column: 1 / 2; /* Заголовок занимает первую колонку */
+    grid-column: 1 / 2;
   }
 
   .why-hard-section .article__inner {
-    grid-column: 2 / 3; /* Статьи занимают вторую колонку */
+    grid-column: 2 / 3;
   }
 
   .how-concetrait-section {
@@ -393,11 +392,11 @@
 
   .why-hard-section__title {
     max-width: 90%;
-    grid-column: 1 / 2; /* Заголовок занимает первую колонку */
+    grid-column: 1 / 2;
   }
 
   .why-hard-section .article__inner {
-    grid-column: 2 / 3; /* Статьи занимают вторую колонку */
+    grid-column: 2 / 3;
   }
 
   .how-concetrait-section {
