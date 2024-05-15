@@ -9,9 +9,11 @@
   text-align: left;
   color: var(--text-color);
   background-image: var(--backgound-image);
+  background-color: var(--background-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -92,7 +94,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--btn-color)
+  outline: 1px solid var(--btn-color);
 }
 
 .header__title {
@@ -262,6 +264,7 @@
   }
 
   .why-hard-section__title {
+    max-width: 90%;
     grid-column: 1 / 2; /* Заголовок занимает первую колонку */
   }
 
@@ -274,10 +277,6 @@
     grid-template-columns: 1fr 2fr;
     justify-content: space-between;
     column-gap: 20px;
-  }
-
-  .why-hard-section__title {
-    max-width: 90%;
   }
 
   .concetration-section__title {
@@ -378,6 +377,7 @@
   }
 
   .why-hard-section__title {
+    max-width: 90%;
     grid-column: 1 / 2; /* Заголовок занимает первую колонку */
   }
 
@@ -392,17 +392,10 @@
     column-gap: 10px;
   }
 
-  .why-hard-section__title {
-    max-width: 90%;
-  }
-
   .concetration-section {
-
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-column-gap: 20px;
-
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
   }
   .concetration-section__title {
     max-width: 30%;
