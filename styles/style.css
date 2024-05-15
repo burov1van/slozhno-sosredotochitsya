@@ -47,6 +47,7 @@
 }
 
 .header__element {
+  display: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 139%;
@@ -88,8 +89,16 @@
   line-height: 100%;
   text-align: center;
   text-transform: lowercase;
+  cursor: pointer;
   &:hover {
     outline: 1px solid var(--btn-color);
+  }
+  &:focus {
+    outline: none;
+
+    &:focus-visible {
+      border-bottom: 1px solid var(--btn-color);
+    }
   }
 }
 
@@ -209,6 +218,12 @@
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: 1px solid var(--text-color);
   }
 }
 
