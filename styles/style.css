@@ -19,9 +19,10 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
   position: relative;
   min-height: 668px;
+  gap: 77px;
 }
 
 .decorated-zone::after {
@@ -72,7 +73,7 @@
 }
 
 .header__theme-menu {
-  margin: 63px 0 72px 0;
+  align-self: flex-end;
 }
 
 .header__theme-menu-list {
@@ -106,21 +107,26 @@
   outline: 1px solid var(--btn-color);
 }
 
+.header__content {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 51px;
+}
+
 .header__title {
-  align-self: flex-start;
-  margin-bottom: 55px;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 81%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
+  text-shadow: 4px 4px 0 var(--accent-color);}
 
 .header__text {
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
   max-width: 364px;
+align-self: self-end;
 }
 
 .title-decor {
@@ -229,10 +235,16 @@
 
 /* Медиазапросы */
 
-@media (768px <= width < 1024px) {
+@media (768px <= width < 1024px)
+ {
   .header {
     min-height: 1024px;
+    gap: 180px;
   }
+
+.header__theme-menu-item {
+  padding-top: 2px;
+}
 
   .decorated-zone::after {
     right: 20px;
@@ -254,15 +266,15 @@
     right: 48px;
   }
 
-  .header__theme-menu {
-    margin-top: 171px;
-    margin-bottom: 177px;
-  }
-
   .header__title {
-    margin-bottom: 163px;
+    
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__content{
+gap: 163px;
+
   }
 
   .main {
@@ -304,7 +316,7 @@
     justify-content: space-between;
   }
 
-  .pictures-section h3 {
+  .pictures-section h2 {
     grid-column: 1 / -1;
     margin: 0;
   }
@@ -333,8 +345,13 @@
 
 @media (1024px <= width) {
   .header {
+    gap: 278px;
     justify-content: flex-start;
     min-height: 768px;
+  }
+
+  .header__content {
+    gap: 115px;
   }
 
   .decorated-zone::after {
@@ -358,13 +375,11 @@
   }
 
   .header__theme-menu {
-    margin: 0 0 279px 0;
     align-self: center;
   }
 
   .header__title {
     margin-left: -20px;
-    margin-bottom: 115px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -423,7 +438,7 @@
     justify-content: space-between;
   }
 
-  .pictures-section h3 {
+  .pictures-section h2 {
     grid-column: 1 / -1;
     margin: 0;
   }
