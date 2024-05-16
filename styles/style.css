@@ -108,10 +108,10 @@
 }
 
 .header__content {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- gap: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 51px;
 }
 
 .header__title {
@@ -119,14 +119,15 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 81%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);}
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
 
 .header__text {
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
   max-width: 364px;
-align-self: self-end;
+  align-self: self-end;
 }
 
 .title-decor {
@@ -235,16 +236,15 @@ align-self: self-end;
 
 /* Медиазапросы */
 
-@media (768px <= width < 1024px)
- {
+@media (768px <= width < 1024px) {
   .header {
     min-height: 1024px;
     gap: 180px;
   }
 
-.header__theme-menu-item {
-  padding-top: 2px;
-}
+  .header__theme-menu-item {
+    padding-top: 2px;
+  }
 
   .decorated-zone::after {
     right: 20px;
@@ -267,14 +267,12 @@ align-self: self-end;
   }
 
   .header__title {
-    
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .header__content{
-gap: 163px;
-
+  .header__content {
+    gap: 163px;
   }
 
   .main {
