@@ -13,6 +13,7 @@
   --btn-color: #ff0070;
   --section-title-color: #ff0070;
   --background-color: #000028;
+  --standart-gap: 10px;
 }
 
 .page.theme_dark .header__element {

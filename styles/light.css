@@ -13,6 +13,7 @@
   --btn-color: #353430;
   --section-title-color: #353430;
   --background-color: #f5f5f5;
+  --standart-gap: 10px;
 }
 
 /* Остальные стили */
@@ -27,6 +28,7 @@
     --btn-color: #353430;
     --section-title-color: #353430;
     --background-color: #f5f5f5;
+    --standart-gap: 10px;
   }
 }
 
