@@ -13,4 +13,8 @@
   --main-title-color: #db00ff;
   --background-color: #000028;
   --standart-gap: 10px;
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --shadow-color: #ff0070;
+  --link-shadow: var(--accent-color);
+  --transit_duration: 0.2s;
 }

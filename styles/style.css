@@ -69,7 +69,7 @@
   right: -19px;
   background-color: var(--accent-color);
   border-radius: 100%;
-  box-shadow: 0 0 4px 2px #ff0070;
+  box-shadow: 0 0 4px 2px var(--shadow-color);
 }
 
 .header__theme-menu {
@@ -92,7 +92,7 @@
   text-transform: lowercase;
   cursor: pointer;
   &:hover {
-    outline: 1px solid var(--btn-color);
+    outline: 1px solid var(--hover-color);
   }
   &:focus {
     outline: none;
@@ -105,6 +105,8 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--btn-color);
+  cursor: default;
+  transition-duration: var(--transit_duration);
 }
 
 .header__content {
@@ -119,7 +121,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 81%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header__text {
@@ -196,10 +198,10 @@
 
 .footer__title {
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .how-concetrait-section__list {
@@ -218,13 +220,20 @@
 }
 
 .section__text-link {
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  text-shadow: 2px 2px 0px #ff0070;
+  text-shadow: 2px 2px 0px var(--link-shadow);
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+  &:hover::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--text-color);
+    left: 0;
+    bottom: 0;
   }
   &:focus {
     outline: none;
@@ -289,6 +298,10 @@
 
   .footer {
     margin-top: 39px;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
