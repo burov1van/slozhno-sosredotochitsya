@@ -16,7 +16,7 @@
   --standart-gap: 10px;
   --hover-color: rgba(50, 49, 45, 0.4);
   --shadow-color: #ff0070;
-  --link-shadow: var(--title-color);
+  --link-shadow: var(--accent-color);
   --transit_duration: 0.2s;
 }
 
@@ -35,7 +35,7 @@
     --standart-gap: 10px;
     --hover-color: rgba(50, 49, 45, 0.4);
     --shadow-color: #ff0070;
-    --link-shadow: var(--title-color);
+    --link-shadow: var(--accent-color);
     --transit_duration: 0.2s;
   }
 }
